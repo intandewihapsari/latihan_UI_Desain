@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profil"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_baseline_person" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/hamburger"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_baseline_dehaze" />
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_horizontal"
+        android:text="Hallo Kuliner! "
+        android:textColor="@color/oyen"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:hint="Cari makanan lezat disini"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:paddingTop="4dp"
+        android:paddingEnd="110dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_horizontal"
+        android:backgroundTint="@color/oyen"
+        android:elevation="4dp"
+        android:textSize="14sp"
+        android:background="@drawable/rounded_corners" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ic_search"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/ic_baseline_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="220dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="440dp"/>
+
+</RelativeLayout>
+
+</ScrollView>
