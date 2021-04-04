@@ -42,7 +42,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nama Pengguna"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -63,12 +63,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="22dp"
-                android:backgroundTint="#d67601"
-                android:background="@drawable/rounded_corners"
                 android:text="Selesai"
-                android:textAllCaps="false"
-                android:textColor="#fff"
-                android:textSize="18sp" />
+                android:backgroundTint="@color/oyen"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
         </LinearLayout>
     </RelativeLayout>
 

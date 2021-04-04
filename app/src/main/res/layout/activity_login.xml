@@ -73,12 +73,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="22dp"
-                android:background="@drawable/rounded_corners"
-                android:backgroundTint="#d67601"
                 android:text="Masuk"
-                android:textAllCaps="false"
-                android:textColor="#fff"
-                android:textSize="18sp" />
+                android:backgroundTint="@color/oyen"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
         </LinearLayout>
     </RelativeLayout>
 
