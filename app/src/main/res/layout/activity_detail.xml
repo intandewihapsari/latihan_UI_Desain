@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/fcilokk" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:id="@+id/r1"
+            android:layout_below="@+id/l1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Acihuy Akang"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/rating" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:text="Rp11.600.000"
+                android:textSize="18sp"
+                android:textColor="@color/oyen"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:text="21 Terjual"
+                android:textSize="16sp"
+                android:textColor="@color/grey"/>
+        </GridLayout>
+        <View
+            android:id="@+id/garis1"
+            android:layout_below="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_margin="13dp"
+            android:layout_height="2dp"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:id="@+id/lprofil"
+            android:layout_below="@+id/garis1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/logoaci" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Akang Group"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/garis2"
+            android:layout_below="@+id/lprofil"
+            android:layout_width="match_parent"
+            android:layout_margin="13dp"
+            android:layout_height="2dp"
+            android:background="@color/grey"/>
+
+        <TextView
+            android:id="@+id/tabout"
+            android:layout_below="@+id/garis2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:text="Tentang Acihuy Akang"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/dabout"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabout"
+            android:layout_marginStart="16dp"
+            android:text="Acihuy Akang adalah usaha yang bergerak di bidang kuliner olahan aci dengan berbagai varian rasa saus yang kekinian. Acihuy Akang menawarkan snack yang enak dengan bahan baku berkualitas namun dengan harga yang terjangkau. Memberikan pelayanan yang terbaik untuk para mitra dan seluruh #AcihuyMania."
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tdapat"
+            android:layout_below="@+id/dabout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:text="Peralatan yang Didapat"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <HorizontalScrollView
+            android:id="@+id/idapat"
+            android:layout_below="@+id/tdapat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/card"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/dtoko"
+                        android:layout_marginTop="12dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Booth"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/card"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/dbahan"
+                        android:layout_marginTop="12dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bahan Baku"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/card"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/dsusuk"
+                        android:layout_marginTop="12dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alat Masak"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/card"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_baseline_more"
+                        android:layout_marginTop="12dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lainnya"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        </HorizontalScrollView>
+        <TextView
+            android:id="@+id/tdok"
+            android:layout_below="@+id/idapat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:text="Dokumen Tambahan"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tdoklan"
+            android:layout_below="@+id/tdok"
+            android:layout_width="380dp"
+            android:layout_height="80dp"
+            android:layout_margin="12dp"
+            app:cardBackgroundColor="@color/card"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_below="@+id/ttes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="Surat Perjanjian Mitra Waralaba Acihuy Akang"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="24dp"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/ttes"
+            android:layout_below="@+id/tdoklan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Cerita Sukses Mitra"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:id="@+id/ltes"
+            android:layout_below="@+id/ttes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/emojipng" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Rafael Adrian"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="110dp"
+                android:src="@drawable/rating" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ttesisi"
+            android:layout_below="@+id/ltes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="“Saya karyawan sebuah perusahaan Event Organizer yang sudah beberapa bulan bermitra dengan Acihuy Akang. Saya berhasil menjual rata rata 250pcs per harinya dengan berjualan di alun alun kota. Acihuy Akang emang mantap!”"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="26dp"
+            android:textColor="@color/grey"/>
+        <View
+            android:id="@+id/garis3"
+            android:layout_below="@+id/ttesisi"
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:layout_height="2dp"
+            android:background="@color/card"/>
+        <LinearLayout
+            android:id="@+id/ltes1"
+            android:layout_below="@+id/garis3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/emojipng1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Serenata Aluna"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="110dp"
+                android:src="@drawable/rating" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ttesisi1"
+            android:layout_below="@+id/ltes1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="26dp"
+            android:text="“Saya karyawan sebuah perusahaan Event Organizer yang sudah beberapa bulan bermitra dengan Acihuy Akang. Saya berhasil menjual rata rata 250pcs per harinya dengan berjualan di alun alun kota. Acihuy Akang emang mantap!”"
+            android:textSize="14sp"
+            android:textColor="@color/grey"/>
+        <LinearLayout
+            android:id="@+id/lbutton"
+            android:layout_below="@+id/ttesisi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_chat" />
+        <Button
+            android:id="@+id/beli"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            app:cornerRadius="10dp"
+            android:layout_margin="16dp"
+            android:background="@color/oyen"
+            android:text="Beli Franchise"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

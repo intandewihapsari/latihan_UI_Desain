@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         val buatAkun = findViewById<TextView>(R.id.buatAkun)
 
         buatAkun.setOnClickListener{
-            startActivity(Intent(this,SignUpActivity::class.java))
+            startActivity(Intent(this,BerandaActivity::class.java))
         }
         mBtnLogin.setOnClickListener{
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this,BerandaActivity::class.java))
         }
     }
 }

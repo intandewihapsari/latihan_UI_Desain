@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BayarActivity">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/logobank" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Bank Permata"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/t1"
+        android:layout_below="@id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7040 813 6767 8535"
+        android:textColor="@color/oyen"
+        android:layout_marginStart="16dp"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_below="@id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Total Pembayaran"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="140dp"
+            android:text="Rp11.826.500"
+            android:textColor="@color/oyen"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/garis1"
+        android:layout_below="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:layout_height="2dp"
+        android:background="@color/grey"/>
+    <TextView
+        android:id="@+id/t3"
+        android:layout_below="@+id/garis1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:text="Petunjuk Pembayaran"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t3"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="1. Pilih ‘Pembayaran Tagihan’\n\n
+2. Pilih ‘Virtual Account’ \n\n
+3. Masukkan kode bayar 7040 81367678535, kemudian pilih ‘OK’ \n\n
+4. Periksa informasi yang tertera di layar, pastikan semuanya sesuai. Jika sudah sesuai, pilih ‘Selanjutnya’\n\n
+5. Masukkan PIN Anda, kemudian pilih ‘Selanjutnya’"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/selesai"
+        android:layout_below="@id/t4"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="10dp"
+        android:background="@color/oyen"
+        android:text="Kembali Ke Beranda"/>
+</RelativeLayout>

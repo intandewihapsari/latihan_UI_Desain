@@ -13,15 +13,16 @@ class BerandaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_beranda)
 
-        val homeFagment = HomeFragment()
+        val homeFragment = HomeFragment()
         val bookmarkFragment = BookmarkFragment()
         val notificationFragment = NotificationFragment()
         val bottomNavigationView = findViewById <BottomNavigationView> (R.id.bottomNavigationView)
 
-        makeCurrentFragment(homeFagment)
+
+        makeCurrentFragment(homeFragment)
         bottomNavigationView.setOnNavigationItemReselectedListener {
             when (it.itemId) {
-                R.id.ic_home -> makeCurrentFragment(homeFagment)
+                R.id.ic_home -> makeCurrentFragment(homeFragment)
                 R.id.ic_notifications -> makeCurrentFragment(notificationFragment)
                 R.id.ic_bookmark -> makeCurrentFragment(bookmarkFragment)
             }

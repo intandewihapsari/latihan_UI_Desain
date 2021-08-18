@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/mainlayout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BerandaActivity">
 
@@ -17,9 +18,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemBackground="@color/oyen"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"
+        app:itemBackground="@color/white"
+        app:itemIconTint="#969696"
+        app:itemTextColor="#969696"
         app:menu="@menu/nav_menu"/>
 
 

@@ -4,12 +4,23 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/img_logo"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/img_logo_round"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.LatihanUI">
-        <activity android:name=".SplassScreenActivity"
+        <activity android:name=".fragments.FinanceActivity"></activity>
+        <activity android:name=".fragments.BayarActivity" />
+        <activity android:name=".fragments.BeliActivity" />
+        <activity android:name=".fragments.DetailActivity" />
+        <activity
+            android:name=".fragments.FranchiseActivity"
+            android:theme="@style/Theme.LatihanUI.noActionBar" />
+        <activity
+            android:name=".fragments.VideoActivity"
+            android:theme="@style/Theme.LatihanUI.noActionBar" />
+        <activity
+            android:name=".SplassScreenActivity"
             android:theme="@style/Theme.LatihanUI.noActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +29,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.LatihanUI.noActionBar" />
+        <activity
             android:name=".LoginActivity"
             android:theme="@style/Theme.LatihanUI.noActionBar" />
         <activity
@@ -25,10 +39,6 @@
             android:theme="@style/Theme.LatihanUI.noActionBar" />
         <activity android:name=".EdukasiActivity" />
         <activity android:name=".BerandaActivity" />
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/Theme.LatihanUI.noActionBar">
-        </activity>
     </application>
 
 </manifest>

@@ -3,23 +3,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_gravity="center"
     tools:context=".fragments.NotificationFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <com.google.android.material.imageview.ShapeableImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginTop="100dp"
-        android:layout_marginStart="60dp"
-        android:src="@drawable/ic_baseline_notifications"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tidak ada Notifikasi"
-        android:layout_marginStart="120dp"
-        android:textSize="20sp"
-        android:textColor="@color/black"/>
+        android:layout_marginStart="30dp"
+        android:src="@drawable/ic_baseline_person"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:layout_marginStart="16dp"
+                android:textSize="20sp"
+                android:text="Intan Dewi Hapsari"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="16dp"
+                android:textSize="20sp"
+                android:text="3290436700"/>
+
+        </LinearLayout>
 
 </LinearLayout>

@@ -15,7 +15,7 @@
     </style>
 
     <style name="Theme.LatihanUI.noActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimaryVariant">@color/oyen</item>
+        <item name="colorPrimaryVariant">@color/teal_200</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorOnSecondary">@color/black</item>
         <item name="windowActionBar">false</item>

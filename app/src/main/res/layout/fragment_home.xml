@@ -4,84 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="28dp"
     tools:context=".fragments.HomeFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="24dp">
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/profil"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="360dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/ic_baseline_person" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="202dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/frame"
+            app:cardCornerRadius="10dp" />
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/hamburger"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/ic_baseline_dehaze" />
-
-    <TextView
-        android:id="@+id/login_title"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginStart="110dp"
-        android:gravity="center_horizontal"
-        android:text="Hallo Kuliner! "
-        android:textColor="@color/oyen"
-        android:textSize="32sp"
-        android:textStyle="bold" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="320dp"
-        android:layout_height="30dp"
-        android:hint="Cari makanan lezat disini"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:paddingTop="4dp"
-        android:paddingEnd="60dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginStart="30dp"
-        android:gravity="center_horizontal"
-        android:backgroundTint="@color/oyen"
-        android:elevation="4dp"
-        android:textSize="14sp"
-        android:background="@drawable/rounded_corners" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/ic_search"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="360dp"
-        android:layout_marginTop="70dp"
-        android:src="@drawable/ic_baseline_search" />
-
-    <HorizontalScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
         <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="246dp"
             android:rowCount="1"
-            android:columnCount="8"
-            android:layout_marginStart="10dp"
+            android:columnCount="3"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:alignmentMode="alignMargins"
-            android:columnOrderPreserved="false"
-            android:scrollbars="horizontal">
+            android:columnOrderPreserved="false">
+
             <androidx.cardview.widget.CardView
-                android:layout_width="80dp"
-                android:layout_height="140dp"
-                app:cardCornerRadius="24dp"
+                android:id="@+id/mart"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
                 app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/white"
+                app:cardBackgroundColor="@color/muda"
                 android:layout_margin="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -90,28 +48,30 @@
                     android:gravity="center">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:src="@drawable/imgkru"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/mart"
                         android:layout_marginTop="12dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Krupuk"
-                        android:textSize="15sp"
+                        android:text="WaraMart"
+                        android:textSize="13sp"
                         android:textColor="@color/black"
-                        android:layout_marginTop="20dp"/>
+                        android:layout_marginTop="6dp"/>
                 </LinearLayout>
 
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
-                android:layout_width="80dp"
-                android:layout_height="140dp"
-                app:cardCornerRadius="24dp"
+                android:id="@+id/finance"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
                 app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/white"
-                android:layout_margin="10dp">
+                app:cardBackgroundColor="@color/muda"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -119,28 +79,31 @@
                     android:gravity="center">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:src="@drawable/imgdon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/dompet"
                         android:layout_marginTop="12dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Donat"
-                        android:textSize="15sp"
+                        android:text="WaraFinance"
+                        android:textSize="13sp"
                         android:textColor="@color/black"
-                        android:layout_marginTop="20dp"/>
+                        android:layout_marginTop="6dp"/>
                 </LinearLayout>
 
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
-                android:layout_width="80dp"
-                android:layout_height="140dp"
-                app:cardCornerRadius="24dp"
+                android:id="@+id/edu"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
                 app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/white"
-                android:layout_margin="10dp">
+                app:cardBackgroundColor="@color/muda"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -148,415 +111,367 @@
                     android:gravity="center">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:src="@drawable/imgsat"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/edu"
                         android:layout_marginTop="12dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sate"
-                        android:textSize="15sp"
+                        android:text="WaraEdu"
+                        android:textSize="13sp"
                         android:textColor="@color/black"
-                        android:layout_marginTop="20dp"/>
+                        android:layout_marginTop="6dp"/>
                 </LinearLayout>
 
 
             </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="80dp"
-                android:layout_height="140dp"
-                app:cardCornerRadius="24dp"
-                app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/white"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:src="@drawable/imgpiz"
-                        android:layout_marginTop="12dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Pizza"
-                        android:textSize="15sp"
-                        android:textColor="@color/black"
-                        android:layout_marginTop="20dp"/>
-                </LinearLayout>
 
 
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="80dp"
-                android:layout_height="140dp"
-                app:cardCornerRadius="24dp"
-                app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/white"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:src="@drawable/img1"
-                        android:layout_marginTop="12dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Nasi"
-                        android:textSize="15sp"
-                        android:textColor="@color/black"
-                        android:layout_marginTop="20dp"/>
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="80dp"
-                android:layout_height="140dp"
-                app:cardCornerRadius="24dp"
-                app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/white"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:src="@drawable/imgbak"
-                        android:layout_marginTop="12dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bakso"
-                        android:textSize="15sp"
-                        android:textColor="@color/black"
-                        android:layout_marginTop="20dp"/>
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="80dp"
-                android:layout_height="140dp"
-                app:cardCornerRadius="24dp"
-                app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/white"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:src="@drawable/imgbur"
-                        android:layout_marginTop="12dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Burger"
-                        android:textSize="15sp"
-                        android:textColor="@color/black"
-                        android:layout_marginTop="20dp"/>
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="80dp"
-                android:layout_height="140dp"
-                app:cardCornerRadius="24dp"
-                app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/white"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:src="@drawable/imgnas"
-                        android:layout_marginTop="12dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Nasi Kuning"
-                        android:textSize="15sp"
-                        android:textColor="@color/black"
-                        android:layout_marginTop="20dp"/>
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
 
 
         </GridLayout>
-    </HorizontalScrollView>
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="300dp"
-        android:rowCount="3"
-        android:columnCount="2"
-        android:layout_marginStart="10dp"
-        android:alignmentMode="alignMargins"
-        android:columnOrderPreserved="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="382dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp"
-            app:cardBackgroundColor="@color/grey"
-            android:layout_margin="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Franchise Populer"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
 
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/img1"
-                    android:layout_marginTop="12dp"/>
-                <TextView
+            <TextView
+                android:id="@+id/seeMoreFranchise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See More"
+                android:textSize="14sp"
+                android:layout_marginStart="110dp"
+                android:clickable="true"
+                android:textColor="@color/oyen"/>
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="420dp"
+            android:rowCount="2"
+            android:columnCount="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/beliaci"
+                android:layout_width="360dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/card"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:src="@drawable/fcilok" />
+
+                    <LinearLayout
+                        android:layout_width="136dp"
+                        android:layout_height="103dp"
+                        android:layout_marginStart="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Acihuy Akang"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Akang Corp"
+                            android:textColor="@color/grey"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="Rp11.600.000"
+                            android:textColor="@color/oyen"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="85dp"
+                        android:text="21 Terjual"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="360dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/card"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:src="@drawable/fboba" />
+
+                    <LinearLayout
+                        android:layout_width="136dp"
+                        android:layout_height="103dp"
+                        android:layout_marginStart="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Miauw Boba"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="PT. Miauw Indonesia"
+                            android:textColor="@color/grey"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="Rp2.400.000"
+                            android:textColor="@color/oyen"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="85dp"
+                        android:text="18 Terjual"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="710dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="VideoTerbaru"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/seeMoreVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See More"
+                android:textSize="14sp"
+                android:layout_marginStart="150dp"
+                android:textColor="@color/oyen"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="750dp"
+            android:rowCount="2"
+            android:columnCount="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/l1"
+                android:layout_width="360dp"
+                android:layout_height="285dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/card"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nasi"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="20dp"/>
-            </LinearLayout>
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="360dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/thumbnail1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="10dp"
+                        android:text= "Bongkar Kesalahan Pebisnis Pemula"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="42rb x ditonton | 3 jam yang lalu"
+                        android:textColor="@color/grey"
+                        android:textSize="13sp" />
 
 
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp"
-            app:cardBackgroundColor="@color/grey"
-            android:layout_margin="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                </LinearLayout>
 
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/imgbak"
-                    android:layout_marginTop="12dp"/>
-                <TextView
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/l2"
+                android:layout_below="@+id/l1"
+                android:layout_width="360dp"
+                android:layout_height="285dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/card"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bakso"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="20dp"/>
-            </LinearLayout>
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="360dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/thumbnail2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="10dp"
+                        android:text= "Pentingnya Konten Marketing"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="42rb x ditonton | 2 jam yang lalu"
+                        android:textColor="@color/grey"
+                        android:textSize="13sp" />
 
 
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp"
-            app:cardBackgroundColor="@color/grey"
-            android:layout_margin="10dp">
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="1360dp"
+            android:textStyle="bold"
+            android:text="Kenal Warabisa Lebih Dekat"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <HorizontalScrollView
+            android:id="@+id/lh"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="1390dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:layout_height="200dp"
+                android:orientation="horizontal">
 
                 <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/imgbur"
-                    android:layout_marginTop="12dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Burger"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="20dp"/>
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp"
-            app:cardBackgroundColor="@color/grey"
-            android:layout_margin="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/gr1" />
                 <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/imgkru"
-                    android:layout_marginTop="12dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Krupuk"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="20dp"/>
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp"
-            app:cardBackgroundColor="@color/grey"
-            android:layout_margin="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/gr2" />
                 <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/imgnas"
-                    android:layout_marginTop="12dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nasi Kuning"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="20dp"/>
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/gr3" />
             </LinearLayout>
 
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp"
-            app:cardBackgroundColor="@color/grey"
-            android:layout_margin="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/imgpiz"
-                    android:layout_marginTop="12dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pizza"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="20dp"/>
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp"
-            app:cardBackgroundColor="@color/grey"
-            android:layout_margin="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/imgsat"
-                    android:layout_marginTop="12dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sate"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="20dp"/>
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp"
-            app:cardBackgroundColor="@color/grey"
-            android:layout_margin="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/imgdon"
-                    android:layout_marginTop="12dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Donat"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="20dp"/>
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-    </GridLayout>
+        </HorizontalScrollView>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_below="@+id/lh"/>
 
 </RelativeLayout>
 
